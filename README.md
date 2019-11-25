@@ -13,11 +13,13 @@
 
 ## Wireframe
 ### Log-in Page
-<img src=https://i.imgur.com/rzdZNj3.png>
+<img src=https://i.imgur.com/3vksWWY.png>
 
 ### Main Page
-<img src=https://i.imgur.com/mEgfiXy.png>
+<img src=https://i.imgur.com/jwjJRw1.png>
 
+### Section
+<img src=https://i.imgur.com/uH74UUy.png>
 
 ## Current App Layout
 
