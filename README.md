@@ -24,7 +24,7 @@
 <img src=https://i.imgur.com/uH74UUy.png>
 
 ## ERD's
-<img src=https://i.imgur.com/DYiPUJs.png>
+<img src=https://i.imgur.com/7qeC2sm.png>
 
 ## Current App Layout
 
