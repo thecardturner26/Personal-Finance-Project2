@@ -1,7 +1,12 @@
-var Bill = require('../models/bill');
+const User = require('../models/user');
 
 
 
 module.exports = {
-    Bill
+    index
+}
+
+
+function index(req, res){
+    res.render('bills/index', {user: req.user})
 }

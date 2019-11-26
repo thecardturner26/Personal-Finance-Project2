@@ -11,6 +11,8 @@ var billsCtrl = require('../controllers/bills')
 //   //res.send('respond with a resource');
 // });
 
+router.get('/bills', billsCtrl.index)
+
 module.exports = router;
 
 
