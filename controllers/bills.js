@@ -8,5 +8,5 @@ module.exports = {
 
 
 function index(req, res){
-    res.render('bills/index', {user: req.user})
+    res.render('/', {user: req.user})
 }
