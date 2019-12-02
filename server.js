@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
 var passport = require('passport');
+// const NewsAPI = require('newsapi');
+// const newsapi = new NewsAPI('39e2ec338caf479ba4849ef6de415301');
 //require('./config/database');
 
 var indexRouter = require('./routes/index');

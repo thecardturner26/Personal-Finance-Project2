@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var billsCtrl = require('../controllers/bills')
+var billsCtrl = require('../controllers/bills');
+var moviesCtrl = require('../controllers/bills');
 
 
 
@@ -12,7 +13,8 @@ var billsCtrl = require('../controllers/bills')
 //   //res.send('respond with a resource');
 // });
 
-router.get('/bills', billsCtrl.index)
+router.get('/bills', billsCtrl.index);
+router.get('/new', moviesCtrl.new);
 
 module.exports = router;
 

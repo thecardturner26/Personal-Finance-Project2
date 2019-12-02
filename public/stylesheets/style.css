@@ -6,3 +6,13 @@ body {
 a {
   color: #00B7FF;
 }
+
+
+header {
+position: absolute;
+width: 1440px;
+height: 100px;
+left: 0px;
+top: 0px;
+background-color: #78FFD2;
+}

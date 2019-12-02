@@ -3,7 +3,13 @@ const User = require('../models/user');
 
 
 module.exports = {
+    new: newBill,
     index
+}
+
+
+function newBill(req,res){
+    res.render('bills/new')
 }
 
 
