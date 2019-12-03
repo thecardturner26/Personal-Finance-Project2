@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 var billsCtrl = require('../controllers/bills');
-var moviesCtrl = require('../controllers/bills');
+var billsCtrl = require('../controllers/bills');
+var billsCtrl = require('../controllers/bills');
 
 
 
@@ -14,7 +15,8 @@ var moviesCtrl = require('../controllers/bills');
 // });
 
 router.get('/bills', billsCtrl.index);
-router.get('/new', moviesCtrl.new);
+router.get('/new', billsCtrl.new);
+router.get('/hub', billsCtrl.hub)
 
 module.exports = router;
 

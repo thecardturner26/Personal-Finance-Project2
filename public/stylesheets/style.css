@@ -31,10 +31,10 @@ border-radius: 20px;
 }
 
 div {
-font-family: Roboto;
+font: "Lucida Grande", Helvetica, Arial, sans-serif;
 font-style: normal;
 font-weight: bold;
-font-size: 36px;
+font-size: 30px;
 line-height: 42px;
 text-align: center;
 letter-spacing: -0.015em;

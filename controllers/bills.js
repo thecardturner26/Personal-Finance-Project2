@@ -5,7 +5,8 @@ const User = require('../models/user');
 module.exports = {
     create,
     new: newBill,
-    index
+    index,
+    hub
 }
 
 
@@ -29,6 +30,11 @@ function create(req, res){
 
 function newBill(req, res){
     res.render('bills/new')
+}
+
+
+function hub(req, res){
+    res.render('bills/hub')
 }
 
 

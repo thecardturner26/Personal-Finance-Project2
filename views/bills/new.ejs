@@ -14,21 +14,21 @@
     <h2>Enter a New Bill Here</h2>
     <div>
     <form action="/bills" method="POST">
-        <label>Name of bill:
-            <input type="text" name="title">
+        <label>Name of Service:
+            <input type="text" name="Service">
         </label><br>
         <label>Bill Catagory
-            <select name="mpaaRating">
-                <option value="G">Online Subcriptions</option>
-                <option value="PG">Utilities</option>
-                <option value="PG-13">Other</option>
+            <select name="Catagory">
+                <option value="Online">Online Subcriptions</option>
+                <option value="Utilities">Utilities</option>
+                <option value="Other">Other</option>
             </select>
         </label><br>
         <label>Cost per month: $
-            <input type="text" name="cast">
+            <input type="text" name="cost">
         </label><br>
         <label>Date due:
-            <input type="date" name="nowShowing" checked>
+            <input type="date" name="dueDate" checked>
         </label><br>
         <input type="submit" value="Add Bill">
     </form>
