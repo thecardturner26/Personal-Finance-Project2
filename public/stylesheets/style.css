@@ -1,6 +1,7 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #DEE8F3;
 }
 
 a {
@@ -10,9 +11,31 @@ a {
 
 header {
 position: absolute;
-width: 1440px;
-height: 100px;
+
+width: 1309px;
+height: 70px;
 left: 0px;
 top: 0px;
 background-color: #78FFD2;
+}
+
+form {
+position: obsolute;
+width: 440px;
+height: 625px;
+left: 500px;
+top: 217px;
+
+background: #BBD4F0;
+border-radius: 20px;
+}
+
+div {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: -0.015em;
 }
