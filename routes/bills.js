@@ -3,6 +3,9 @@ var router = express.Router();
 var billsCtrl = require('../controllers/bills');
 var billsCtrl = require('../controllers/bills');
 var billsCtrl = require('../controllers/bills');
+var billsCtrl = require('../controllers/bills');
+var billsCtrl = require('../controllers/bills');
+var billsCtrl = require('../controllers/bills');
 
 
 
@@ -16,7 +19,11 @@ var billsCtrl = require('../controllers/bills');
 
 router.get('/bills', billsCtrl.index);
 router.get('/new', billsCtrl.new);
-router.get('/hub', billsCtrl.hub)
+router.get('/hub', billsCtrl.hub);
+router.get('/online', billsCtrl.online);
+router.get('/other', billsCtrl.other);
+router.get('/utilities', billsCtrl.utilities)
+
 
 module.exports = router;
 

@@ -11,6 +11,9 @@ var billSchema = new Schema ({
     },
     dueDate: {
         type: Date
+    },
+    category: {
+        type: String
     }
 })
 

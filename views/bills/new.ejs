@@ -13,19 +13,19 @@
     <header>Personal Finance</header>
     <h2>Enter a New Bill Here</h2>
     <div>
-    <form action="/bills" method="POST">
+    <form action="/bills/online" method="POST" autocomplete="off">
         <label>Name of Service:
-            <input type="text" name="Service">
+            <input type="text" name="name">
         </label><br>
         <label>Bill Catagory
-            <select name="Catagory">
+            <select name="category">
                 <option value="Online">Online Subcriptions</option>
                 <option value="Utilities">Utilities</option>
                 <option value="Other">Other</option>
             </select>
         </label><br>
         <label>Cost per month: $
-            <input type="text" name="cost">
+            <input type="text" name="price">
         </label><br>
         <label>Date due:
             <input type="date" name="dueDate" checked>

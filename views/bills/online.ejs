@@ -12,7 +12,14 @@
         Personal Finance
     </header>
     <div>Online</div>
-    <div>Utilities</div>
-    <div>Other</div>
+    <ul>
+            <% todos.forEach(function(t, idx) { %>
+              <li>
+                <%= t.todo %>
+                  - 
+                <%= t.done ? 'done' : 'not done' %>
+              </li>
+            <% }); %>
+    </ul>
 </body>
 </html>
