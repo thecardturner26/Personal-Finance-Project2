@@ -13,11 +13,10 @@
     </header>
     <div>Online</div>
     <ul>
-            <% todos.forEach(function(t, idx) { %>
+            <% bills.forEach(function(b, idx) { %>
               <li>
-                <%= t.todo %>
-                  - 
-                <%= t.done ? 'done' : 'not done' %>
+                <%= b.bill %>
+                
               </li>
             <% }); %>
     </ul>

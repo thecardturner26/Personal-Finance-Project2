@@ -12,31 +12,25 @@ module.exports = {
     utilities
 }
 
-function create(req, res) {
-    req.body.done = false;
-    Bill.create(req.body);
-    res.redirect('/online');
-  }
+// function create(req, res) {
+//     req.body.done = false;
+//     Bill.create(req.body);
+//     res.redirect('/bills/online');
+//   }
 
 
 
-// function create(req, res){
-//     req.body.nowShowing = !!req.body.nowShowing;
-//     req.body.cast = req.body.cast.replace(/\s*,\s*/g, ',');
-//     if (req.body.cast) req.body.cast = req.body.cast.split(',');
-//     for (let key in req.body){
-//         if (req.body[key] === '') delete req.body[key]
-//     }
+function create(req, res){
 
 
-//     var bill = new Bill(req.body);
-//     bill.save(function(err){
-//         if (err) return res.render('bills/online');
-//         console.log(bill);
-//         res.redirect('/bills/online');
+    var bill = new Bill(req.body);
+    bill.save(function(err){
+        if (err) return res.render('bills/new');
+        console.log(bill);
+        res.redirect('/bills/online');
 
-//     });
-// }
+    });
+}
 
 function newBill(req, res){
     res.render('bills/new')
