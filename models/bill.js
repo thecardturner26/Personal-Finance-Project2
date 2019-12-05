@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 const bills = [
-    {name: 'water', price: '10', dueDate: '', category:online}
+    {name: 'water', price: '10', dueDate: '', category: 'online'}
    
   ];
 

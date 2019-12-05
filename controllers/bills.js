@@ -18,19 +18,32 @@ module.exports = {
 //     res.redirect('/bills/online');
 //   }
 
-
-
 function create(req, res){
-
-
-    var bill = new Bill(req.body);
-    bill.save(function(err){
-        if (err) return res.render('bills/new');
-        console.log(bill);
-        res.redirect('/bills/online');
-
-    });
+    bill.save.new
 }
+
+
+
+// function create(req, res){
+//     req.body.name = !!req.body.name;
+//     req.body.price = req.body.price.replace(/\s*,\s*/g, ',');
+//     if (req.body.name) req.body.name = req.body.name.split(',');
+//     for (let key in req.body){
+//         if (req.body[key] === '') delete req.body[key]
+//     }
+
+
+//     var bill = new Bill(req.body);
+//     bill.save(function(err){
+//         if (err) return res.render('bills/online');
+//         console.log(bill);
+//         res.redirect('/bills');
+
+//     });
+// }
+
+
+
 
 function newBill(req, res){
     res.render('bills/new')

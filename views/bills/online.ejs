@@ -9,16 +9,14 @@
 </head>
 <body>
     <header>
-        Personal Finance
+        Personal Finance <br>
+        <a href="/bills/new">Create new Bill</a>
+        <a href="/bills/online">Online</a>
+        <a href="/bills/utilities">utilities</a>
+        <a href="/bills/other">Other</a>
     </header>
     <div>Online</div>
     <ul>
-            <% bills.forEach(function(b, idx) { %>
-              <li>
-                <%= b.bill %>
-                
-              </li>
-            <% }); %>
     </ul>
 </body>
 </html>
