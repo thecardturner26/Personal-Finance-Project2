@@ -19,7 +19,7 @@ router.get('/hub', billsCtrl.hub);
 router.get('/online', billsCtrl.online);
 router.get('/other', billsCtrl.other);
 router.get('/utilities', billsCtrl.utilities)
-router.post('/bills/online', billsCtrl.create)
+router.post('/online', billsCtrl.create)
 
 module.exports = router;
 

@@ -19,7 +19,7 @@ passport.use(new GoogleStrategy({
             //we have a new student via OAuth
             var newUser = new User({
                 name: profile.displayName,
-                eamil: profile.emails[0],
+                email: profile.emails[0].value,
                 googleId: profile.id
             });
             newUser.save(function(err){
@@ -34,7 +34,7 @@ passport.use(new GoogleStrategy({
 
 
 passport.serializeUser(function(user, done) {
-    done(null, user._id);
+    done(null, user.id);
 });
 
 passport.deserializeUser(function(id, done) {
