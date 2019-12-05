@@ -12,15 +12,16 @@ module.exports = {
     utilities
 }
 
-// function create(req, res) {
-//     req.body.done = false;
-//     Bill.create(req.body);
-//     res.redirect('/bills/online');
-//   }
 
-function create(req, res){
-    bill.save.new
-}
+function create (req, res){
+    req.user.bill.push(req.body);
+    req.user.save().then(function(err) {
+    // let bill = new Bill(req.body);
+    //   bill.save(function(err){
+    //         if(err) return res.render('/');
+            res.redirect('/bills/online');
+        })
+    };
 
 
 
@@ -46,27 +47,27 @@ function create(req, res){
 
 
 function newBill(req, res){
-    res.render('bills/new')
+    res.render('bills/new', {user: req.user})
 }
 
 
 function hub(req, res){
-    res.render('bills/hub')
+    res.render('bills/hub', {user: req.user})
 }
 
 
 function online(req, res){
-    res.render('bills/online')
+    res.render('bills/online', {user: req.user})
 }
 
 
 function other(req, res){
-    res.render('bills/other')
+    res.render('bills/other', {user: req.user})
 }
 
 
 function utilities(req, res){
-    res.render('bills/utilities')
+    res.render('bills/utilities', {user: req.user})
 }
 
 

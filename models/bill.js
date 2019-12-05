@@ -7,39 +7,39 @@ const bills = [
   ];
 
 
-var billSchema = new Schema ({
-    name: {
-        type: String
-    },
-    price: {
-        type: Number
-    },
-    dueDate: {
-        type: Date
-    },
-    category: {
-        type: String
-    }
-})
+// var billSchema = new Schema ({
+//     name: {
+//         type: String
+//     },
+//     price: {
+//         type: Number
+//     },
+//     dueDate: {
+//         type: Date
+//     },
+//     category: {
+//         type: String
+//     }
+// })
 
 
-module.exports = {
-    getAll,
-    getOne,
-    create
-  };
+// module.exports = {
+//     getAll,
+//     getOne,
+//     create
+//   };
   
-  function create(bill) {
-    todos.push(bill);
-  }
+//   function create(bill) {
+//     todos.push(bill);
+//   }
   
-  function getOne(id) {
-    return bills[id];
-  }
+//   function getOne(id) {
+//     return bills[id];
+//   }
   
-  function getAll() {
-    return bills;
-  }
+//   function getAll() {
+//     return bills;
+//   }
 
 
 module.exports = mongoose.model('Bill', billSchema);
