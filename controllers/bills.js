@@ -9,7 +9,14 @@ module.exports = {
     hub,
     online,
     other,
-    utilities
+    utilities,
+    delete: deleteOne
+}
+
+
+function deleteOne(req, res) {
+    Bill.findByIdAndDelete(req.params.id, function(err, deletedBill) {
+    })
 }
 
 

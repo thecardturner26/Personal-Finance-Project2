@@ -20,21 +20,7 @@ router.get('/online', billsCtrl.online);
 router.get('/other', billsCtrl.other);
 router.get('/utilities', billsCtrl.utilities)
 router.post('/online', billsCtrl.create)
+router.delete('/bills/:id', billsCtrl.delete);
 
 module.exports = router;
 
-
-
-
-
-
-// var express = require('express');
-// var router = express.Router();
-// var moviesCtrl = require('../controllers/movies');
-
-// router.get('/', moviesCtrl.index);
-// router.get('/new', moviesCtrl.new);
-// router.get('/:id', moviesCtrl.show);
-// router.post('/', moviesCtrl.create);
-
-// module.exports = router;
