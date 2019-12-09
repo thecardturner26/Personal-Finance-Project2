@@ -17,14 +17,43 @@
         <a href="/bills/other">Other</a>
     </header>
     <div>Online</div>
-    <ul>
+    <!-- <ul>
         <% user.bill.forEach(function(user){  %> 
             <li>
                 <p><%= user.name  %></p>
                 <p>$<%= user.price  %></p>
                 <p><%= user.dueDate  %></p>
+
+                <form action="/bills/<%= user._id %>?_method=DELETE" method="POST" class="delete-form">
+                    <th><button type="submit">X</button></th>
+                
+                 
+
             </li>
          <% }) %>   
-    </ul>
+    </ul> -->
+
+
+    <% user.bill.forEach(function(user, idx) { %>
+        <% if(user == undefined) { return; }; %>
+            <tr>
+                <form action="/bills/<%= user._id %>?_method=DELETE" method="POST" class="delete-form">
+                    <th><button type="submit">X</button></th>
+                    <% console.log() %>
+                
+                <th><%= user.name %></th>
+                <th><%= user.price %></th>
+                <th><%= user.dueDate %></th>
+                <th><a href="/bills/new">Add bill</a></th>
+            </form>
+            </tr>
+    <% }); %>
+
+
 </body>
 </html>
+
+
+
+
+<!-- <button type="submit">X</button> -->

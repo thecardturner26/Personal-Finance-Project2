@@ -3,24 +3,7 @@ var Schema = mongoose.Schema;
 
 const bills = [
     {name: 'water', price: '10', dueDate: '', category: 'online'}
-   
-  ];
-
-
-// var billSchema = new Schema ({
-//     name: {
-//         type: String
-//     },
-//     price: {
-//         type: Number
-//     },
-//     dueDate: {
-//         type: Date
-//     },
-//     category: {
-//         type: String
-//     }
-// })
+   ];
 
 
 // module.exports = {

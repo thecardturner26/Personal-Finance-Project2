@@ -14,10 +14,29 @@ module.exports = {
 }
 
 
+
 function deleteOne(req, res) {
-    Bill.findByIdAndDelete(req.params.id, function(err, deletedBill) {
-    })
+    console.log(req.params.id);
+
+    var bill = req.user.bills.id(req.params.id);
+// remove subdoc from the guests mongoose array
+bill.remove();
+// save the user doc
+req.user.save(function(err) {
+  res.redirect('/online');
+  
+});
 }
+
+
+// function deleteOne(req, res) {
+//     Bill.findByIdAndDelete(req.params.id, function(err, deletedBill) {
+//         res.render('/bills/online');
+//     })
+// }
+
+
+
 
 
 function create (req, res){
@@ -27,6 +46,7 @@ function create (req, res){
     //   bill.save(function(err){
     //         if(err) return res.render('/');
         console.log('redirect')
+        
             res.redirect('/bills/online');
         })
     };

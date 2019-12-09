@@ -1,8 +1,5 @@
 var mongoose = require('mongoose');
 
-// The factSchema is used to embedded docs in as tudent doc.
-// There is no model and no 'facts' collection
-
 // var factSchema = new mongoose.Schema({
 //   text: String
 // }, {

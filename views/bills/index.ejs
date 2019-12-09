@@ -4,19 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-signin-client_id" content="979926238247-rraned2s79ti7n0n902rt7ei8vqn2hni.apps.googleusercontent.com">
+    
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
     <title>bills</title>
 </head>
 <body>
-    <header>
+    
         Personal Finance
-    </header>
-    <li>
+    
+    
+        <button id="custumBtn" class="customGPlusSignIn">
+            <span class="icon"></span>
         <% if (user) { %>
             <a href="/logout">Log Out</a>
         <% } else { %>
-            <a href="/auth/google">Login with Google</a>
+            <a  class="buttonText" href="/auth/google">Login with Google</a>
         <% } %>
-    </li>
+        </button>
+
+        
+         <!-- <div id="my-signin2"></div>
+  <script>
+    function onSuccess(googleUser) {
+      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    }
+    function onFailure(error) {
+      console.log(error);
+    }
+    function renderButton() {
+      gapi.signin2.render('my-signin2', {
+        'scope': 'profile email',
+        'width': 240,
+        'height': 50,
+        'longtitle': true,
+        'theme': 'dark',
+        'onsuccess': onSuccess,
+        'onfailure': onFailure
+      });
+    }
+  </script>
+<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script> -->
+         
+
+
+         
+    
     
 </body>
 </html>
