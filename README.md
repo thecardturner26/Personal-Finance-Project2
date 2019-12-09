@@ -26,10 +26,17 @@
 ## ERD's
 <img src=https://i.imgur.com/7qeC2sm.png>
 
+
+## Tech used
+# node
+# express
+# javascript
+# html & css
+
 ## Current App Layout
 
-<!-- <img src="https://i.imgur.com/DIc54mb.png">
-<img src=https://i.imgur.com/ChLVJIJ.png> -->
+<img src="https://i.imgur.com/qrKVD4Y.png">
+<img src="https://i.imgur.com/CrbKjdV.png">
 
 ## Try it out
-<!-- ### https://thecardturner26.github.io/Recycle-Game/index.html -->
+### https://personal-finance-v2.herokuapp.com/

@@ -9,13 +9,7 @@
 </head>
 <body>
 
-    <div>
-            <% if (user) { %>
-                <a href="/logout">Log Out</a>
-            <% } else { %>
-                <a href="/auth/google">Login with Google</a>
-            <% } %>
-    </div>
+    
 
     <br>
     <br>
@@ -23,13 +17,23 @@
     
     <header>
         Personal Finance <br>
-        <a href="/bills/new">Create new Bill</a>
-        <a href="/bills/online">Online</a>
-        <a href="/bills/utilities">utilities</a>
-        <a href="/bills/other">Other</a>
+        
+        <!-- <a href="/bills/utilities">utilities</a>
+        <a href="/bills/other">Other</a> -->
+
+        <div class="signIn">
+                <% if (user) { %>
+                    <a href="/logout">Log Out</a>
+                <% } else { %>
+                    <a href="/auth/google">Login with Google</a>
+                <% } %>
+        </div>
     </header>
-    <div>Online</div>
+
+    <a href="/bills/new">Create new Bill</a>
+        <a href="/bills/online">My Bills</a>
+    <!-- <div>Online</div>
     <div>Utilities</div>
-    <div>Other</div>
+    <div>Other</div> -->
 </body>
 </html>

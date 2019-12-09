@@ -9,14 +9,15 @@
 </head>
 <body>
     <header>
-        Personal Finance <br>
-        <a href="/bills/hub">Hub</a>
+        <p>Personal Finance</p> 
+        <!-- <a href="/bills/hub">Hub</a> -->
         <a href="/bills/new">Create new Bill</a>
-        <a href="/bills/online">Online</a>
-        <a href="/bills/utilities">utilities</a>
-        <a href="/bills/other">Other</a>
+        <a href="/bills/online">Bills</a>
+        <!-- <a href="/bills/utilities">utilities</a>
+        <a href="/bills/other">Other</a> -->
+        <div>Bills</div>
     </header>
-    <div>Online</div>
+   
     <!-- <ul>
         <% user.bill.forEach(function(user){  %> 
             <li>
@@ -33,7 +34,12 @@
          <% }) %>   
     </ul> -->
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
     <% user.bill.forEach(function(user, idx) { %>
         <% if(user == undefined) { return; }; %>
             <tr>
@@ -41,14 +47,14 @@
                     <th><button type="submit">X</button></th>
                     <% console.log() %>
                 
-                <th><%= user.name %></th>
-                <th><%= user.price %></th>
+                <th><%= user.name %></th><br>
+                <th>$<%= user.price %></th><br>
                 <th><%= user.dueDate %></th>
                 <th><a href="/bills/new">Add bill</a></th>
             </form>
             </tr>
     <% }); %>
-
+</div>
 
 </body>
 </html>
